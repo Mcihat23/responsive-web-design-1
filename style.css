@@ -1,0 +1,129 @@
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+    box-sizing: border-box;
+    font-family: Arial, 'Helvetica', sans-serif;
+    font-size: 12px;
+}
+
+header, footer {
+    background-color:beige;
+    text-align: center;
+    display: block;
+    padding: 5px;    
+}
+
+h1 {
+    padding: 2px;
+}
+
+nav {
+    background-color: darkslategray;
+    display: block;
+    padding: 1px;    
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: floralwhite;
+    padding: 10px;
+}
+
+li a:hover {
+    background-color: gold;
+}
+
+.main {
+    background-color: white;
+    margin: 8px;
+}
+
+.content {
+    margin: 4px 8px;
+}
+
+.sidebar {
+    margin: 4px 8px;
+}
+
+.text {
+    text-align: justify;
+}
+
+figure {
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+.first-section, .second-section {
+    max-width: 456px;
+}
+
+.first-article, .second-article {
+    max-width: 480px;
+}
+
+.about-me {
+    max-width: 420px;
+    height: auto;
+}
+
+.d-block {
+    max-width: 420px;
+    height: auto;
+    display: block;
+    margin-bottom: 4px;
+}
+
+@media screen and (max-width: 767px) {
+header, footer {
+    width: 100%;
+}
+nav ul {
+    flex-flow: column;
+    gap: 4px;
+    justify-content: space-between;
+}
+nav li {
+    margin-bottom: 4px;
+}
+
+img {
+    max-width: 425px;
+    height: auto;
+}
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .sidebar {
+        min-width: 256px; 
+        max-width: 320px;        
+    }
+
+    .content {
+        min-width: 480px;
+        flex-grow: 1;
+    }
+    
+    .first-article, .second-article {
+        max-width: 768px;
+    }
+
+}
